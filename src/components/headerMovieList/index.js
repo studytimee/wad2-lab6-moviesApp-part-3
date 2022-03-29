@@ -7,7 +7,6 @@ import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import { useHistory } from 'react-router-dom'
 
-const history = useHistory(); 
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -20,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Header = (props ) => {
+  const history = useHistory(); 
   const classes = useStyles();
   const title = props.title
   return (
