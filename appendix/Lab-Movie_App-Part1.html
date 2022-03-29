@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!-- saved from url=(0087)https://tutors-svelte.netlify.app/#/lab/ewd-2022-wit.netlify.app/topic04/book-1/Startup -->
+<html lang="en" class="hydrated" data-theme="tutors-dark"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style data-styles="">vime-embed,vime-slider,vime-video,vime-file,vime-control,vime-tooltip,vime-icon,vime-menu-item,vime-menu,vime-mute-control,vime-current-time,vime-end-time,vime-time,vime-default-controls,vime-default-settings,vime-captions,vime-click-to-play,vime-dbl-click-fullscreen,vime-icons,vime-poster,vime-skeleton,vime-spinner,vime-ui,vime-volume-control,vime-caption-control,vime-fullscreen-control,vime-pip-control,vime-playback-control,vime-settings-control,vime-submenu,vime-time-progress,vime-menu-radio,vime-scrubber-control,vime-settings,vime-control-group,vime-control-spacer,vime-controls,vime-live-indicator,vime-menu-radio-group,vime-scrim,vime-default-ui,vime-dash,vime-hls,vime-audio,vime-dailymotion,vime-vimeo,vime-youtube,vime-player,vime-playground,vime-faketube{visibility:hidden}.hydrated{visibility:inherit}</style>
+    <link rel="icon" href="https://tutors-svelte.netlify.app/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Lab-Movie_App-Part1_files/default.css">
+    <link rel="stylesheet" href="./Lab-Movie_App-Part1_files/light.css">
+    <script type="module" src="./Lab-Movie_App-Part1_files/vime.esm.js.download"></script>
+    <script type="module" src="./Lab-Movie_App-Part1_files/index.js.download"></script>
+    <title>Lab-Movie_App-Part1</title>
+    <link rel="stylesheet" href="./Lab-Movie_App-Part1_files/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Lab-Movie_App-Part1_files/css2" rel="stylesheet">
+    <script type="module" crossorigin="" src="./Lab-Movie_App-Part1_files/index.b3412a04.js.download"></script>
+    <link rel="modulepreload" href="https://tutors-svelte.netlify.app/assets/vendor.49287226.js">
+    <link rel="stylesheet" href="./Lab-Movie_App-Part1_files/vendor.b26c8fcc.css">
+    <link rel="stylesheet" href="./Lab-Movie_App-Part1_files/index.dbc99bd9.css">
+  <style></style><style></style><style></style><script src="./Lab-Movie_App-Part1_files/katex.min.js.download" integrity="sha512-DAZH0Wu7q9Hnm0Fw8tRZsTeQBzIugiUy6k2r7E0KKMlC2nBvvrNSH/LVnGueCXRfDs5epP+Ieoh3L+VzSKi0Aw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><link rel="stylesheet" href="./Lab-Movie_App-Part1_files/katex.min.css" integrity="sha512-nii0D5CrWiLjtPcfU3pQJifaRLxKKVut/hbsazsodCcIOERZbwLH7dQxzOKy3Ey/Fv8fXCA9+Rf+wQzqklbEJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></head>
+  <body>
+    <div id="app"></div>
+    
+  
+
+<div id="top" class="tutors-container">    <div class="header-container"><div class="navbar" style=""> <div class="flex-1"><img loading="lazy" class="tutorscard-image h-12" src="./Lab-Movie_App-Part1_files/main.jpg" alt="Lab-Movie_App-Part1"> <div class="navbar-title"><p class="text-lg font-bold">Lab-Movie_App-Part1</p> <p class="text-sm font-bold">Enterprise Web Development </p></div></div> <div>   <div data-tip="Search" class="tooltip tooltip-bottom capitalize"><div class="navbar-icon"><a target="" href="https://tutors-svelte.netlify.app/#/search/ewd-2022-wit.netlify.app"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="text-info iconify iconify--fluent" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M10 2.5a7.5 7.5 0 0 1 5.964 12.048l4.743 4.745a1 1 0 0 1-1.32 1.497l-.094-.083l-4.745-4.743A7.5 7.5 0 1 1 10 2.5Zm0 2a5.5 5.5 0 1 0 0 11a5.5 5.5 0 0 0 0-11Z"></path></svg></a></div></div> <div class="tooltip tooltip-bottom" data-tip="Tutors Reader 4.6.4"><a target="_blank" href="https://docs.tutors.dev/"><div class="navbar-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="20px" viewBox="0 0 54.5 39.4" style="enable-background:new 0 0 54.5 39.4;" xml:space="preserve"><defs></defs><g><path fill="hsla(var(--in) / var(--tw-border-opacity))" d="M51.5,0H3C1.4,0,0,1.4,0,3v33.3c0,1.7,1.4,3,3,3h48.5c1.7,0,3-1.4,3-3V3C54.5,1.4,53.1,0,51.5,0z M50,34.8H4.5
+ V4.5H50V34.8z"></path><g><rect fill="hsla(var(--in) / var(--tw-border-opacity))" x="29" y="26.5" width="12.1" height="4.2"></rect><g><path fill="hsla(var(--in) / var(--tw-border-opacity))" d="M13.4,13.5V8.7h19.1v4.8H26v17.2h-5.9V13.5H13.4z"></path></g></g></g></svg></div></a></div> <div class="flex-none tooltip tooltip-top dropdown dropdown-end dropdown-hover"><div data-tip="" class=""><div class="navbar-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="text-warning iconify iconify--fluent" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10Zm0-2V4a8 8 0 1 1 0 16Z"></path></svg></div></div> <ul class="shadow menu dropdown-content bg-base-100 text-base-content w-48 p-1 rounded-xl"><button class="bg-base-100 text-base-content py-2" data-theme="tutors">tutors</button><button class="bg-base-100 text-base-content py-2" data-theme="tutors-dark">tutors-dark</button><button class="bg-base-100 text-base-content py-2" data-theme="tutors-dyslexia">tutors-dyslexia</button><button class="bg-base-100 text-base-content py-2" data-theme="black">black</button><button class="bg-base-100 text-base-content py-2" data-theme="wireframe">wireframe</button></ul></div> <button><div data-tip="Switch layout" class="tooltip tooltip-bottom capitalize"><div class="navbar-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="text-success iconify iconify--fluent" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M7 16a2 2 0 1 1-4 0a2 2 0 0 1 4 0Zm0-8a2 2 0 1 1-4 0a2 2 0 0 1 4 0Zm7 8a2 2 0 1 1-4 0a2 2 0 0 1 4 0Zm0-8a2 2 0 1 1-4 0a2 2 0 0 1 4 0Zm7 8a2 2 0 1 1-4 0a2 2 0 0 1 4 0Zm0-8a2 2 0 1 1-4 0a2 2 0 0 1 4 0Z"></path></svg></div></div></button>  <button><div data-tip="Contents" class="tooltip tooltip-bottom capitalize"><div class="navbar-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="text-bg-base-content iconify iconify--fluent" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><path fill="currentColor" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75Zm0 5A.75.75 0 0 1 2.75 9h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 9.75ZM2.75 14a.75.75 0 0 0 0 1.5h14.5a.75.75 0 0 0 0-1.5H2.75Z"></path></svg></div></div></button></div></div> <div class="navbar-secondary"><div class="navbar-secondary-bg"><ul style=""> <li class="ml-2" style=""><a class="font-bold" href="https://tutors-svelte.netlify.app/#/course/ewd-2022-wit.netlify.app"><div data-tip="" class=""><div class=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="text-info iconify iconify--fluent" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M16.749 2a2.25 2.25 0 0 1 2.25 2.25v15.5a2.25 2.25 0 0 1-2.25 2.25H6.25A2.25 2.25 0 0 1 4 19.75V4.25A2.25 2.25 0 0 1 6.25 2h10.499ZM20 15.002h.75a.75.75 0 0 1 .743.648l.007.102v1.498a.75.75 0 0 1-.648.743L20.75 18H20v-2.998h.75H20Zm0-4h.75a.75.75 0 0 1 .743.648l.007.102v1.498a.75.75 0 0 1-.648.743L20.75 14H20v-2.998h.75H20Zm0-4h.75a.75.75 0 0 1 .743.648l.007.102V9.25a.75.75 0 0 1-.648.743L20.75 10H20V7.002h.75H20Zm-5.246-1.505H8.25a.75.75 0 0 0-.743.649l-.007.101v1.504c0 .38.283.693.649.743l.101.007h6.503a.75.75 0 0 0 .743-.648l.007-.102V6.247a.75.75 0 0 0-.75-.75Z"></path></svg></div></div> <span class="hidden text-xs lg:block lg:pl-2">Enterprise Web Development...</span></a></li><li class="ml-2" style=""><a class="font-bold" href="https://tutors-svelte.netlify.app/#/topic/ewd-2022-wit.netlify.app/topic04"><div data-tip="" class=""><div class=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="text-info iconify iconify--fluent" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M6.19 21.855a.75.75 0 0 1-1.187-.61V6.25A3.25 3.25 0 0 1 8.253 3h7.498a3.25 3.25 0 0 1 3.25 3.25v14.996a.75.75 0 0 1-1.188.609l-5.81-4.181l-5.812 4.18Z"></path></svg></div></div> <span class="hidden text-xs lg:block lg:pl-2">  React: The Component mod...</span></a></li><li class="ml-2" style=""><a class="font-bold" href="https://tutors-svelte.netlify.app/#/lab/ewd-2022-wit.netlify.app/topic04/book-1"><div data-tip="" class=""><div class=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="text-success iconify iconify--fluent" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M9 4.5v6.238c0 .375-.094.744-.273 1.074L7.54 14h8.922l-1.188-2.188A2.25 2.25 0 0 1 15 10.738V4.5h1A.75.75 0 0 0 16 3H8a.75.75 0 0 0 0 1.5h1Zm8.275 11H6.725l-1.582 2.915A1.75 1.75 0 0 0 6.68 21h10.638a1.75 1.75 0 0 0 1.538-2.585L17.275 15.5Z"></path></svg></div></div> <span class="hidden text-xs lg:block lg:pl-2">Lab-Movie_App-Part1</span></a></li></ul></div> <div class="hidden lg:block flex-none" style=""><div class="iconbar"><span><a href="https://wit-msc-in-computing.slack.com/messages/GS3UZQFNF" target="_blank"><div data-tip="Go to module Slack channel" class="tooltip tooltip-top capitalize"><div class="navbar-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="text-error iconify iconify--fluent" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10a9.96 9.96 0 0 1-4.644-1.142l-4.29 1.117a.85.85 0 0 1-1.037-1.036l1.116-4.289A9.959 9.959 0 0 1 2 12C2 6.477 6.477 2 12 2Zm1.252 11H8.75l-.102.007a.75.75 0 0 0 0 1.486l.102.007h4.502l.101-.007a.75.75 0 0 0 0-1.486L13.252 13Zm1.998-3.5h-6.5l-.102.007a.75.75 0 0 0 0 1.486L8.75 11h6.5l.102-.007a.75.75 0 0 0 0-1.486L15.25 9.5Z"></path></svg></div></div></a> </span><span><a href="https://moodle.wit.ie/course/view.php?id=162937" target="_blank"><div data-tip="Go to module Moodle page" class="tooltip tooltip-top capitalize"><div class="navbar-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="text-warning iconify iconify--fluent" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M5 17.75v-3.766l4.06 2.653a5.375 5.375 0 0 0 5.88 0L19 13.984v3.766a.75.75 0 0 1-.15.45l-.001.001l-.001.002l-.003.004l-.009.01l-.012.016l-.013.017l-.086.101a5.325 5.325 0 0 1-.317.33c-.277.267-.69.614-1.25.958C16.037 20.329 14.339 21 12 21c-2.339 0-4.036-.67-5.159-1.361a7.433 7.433 0 0 1-1.25-.957a5.313 5.313 0 0 1-.427-.464l-.009-.01l-.003-.005v-.002A.755.755 0 0 1 5 17.75Zm17.16-7.622l-8.04 5.253a3.875 3.875 0 0 1-4.24 0L3 10.886v5.364a.75.75 0 0 1-1.5 0V10c0-.088.015-.172.043-.25a.75.75 0 0 1 .302-.881l8.064-5.17a3.875 3.875 0 0 1 4.182 0l8.064 5.17a.75.75 0 0 1 .005 1.259Z"></path></svg></div></div></a> </span></div></div> <span class="hidden lg:block flex-none" style=""><div class="iconbar"><span><a href="https://tutors-svelte.netlify.app/#/wall/talk/ewd-2022-wit.netlify.app" target=""><div data-tip="talks" class="tooltip tooltip-top capitalize"><div class="navbar-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="text-info iconify iconify--fluent" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M20.245 12.997c.709 0 1.022.892.469 1.335l-4.718 3.778v1.644a2.25 2.25 0 0 1-2.25 2.25H10.25A2.25 2.25 0 0 1 8 19.754V18.11l-4.72-3.778c-.553-.443-.24-1.335.47-1.335h16.495ZM8.75 9h6.495a1.75 1.75 0 0 1 1.744 1.606l.006.143V12H7v-1.25a1.75 1.75 0 0 1 1.607-1.744L8.75 9h6.495H8.75ZM12 2a3 3 0 1 1 0 6a3 3 0 0 1 0-6Z"></path></svg></div></div></a> </span><span><a href="https://tutors-svelte.netlify.app/#/wall/lab/ewd-2022-wit.netlify.app" target=""><div data-tip="labs" class="tooltip tooltip-top capitalize"><div class="navbar-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="text-success iconify iconify--fluent" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M9 4.5v6.238c0 .375-.094.744-.273 1.074L7.54 14h8.922l-1.188-2.188A2.25 2.25 0 0 1 15 10.738V4.5h1A.75.75 0 0 0 16 3H8a.75.75 0 0 0 0 1.5h1Zm8.275 11H6.725l-1.582 2.915A1.75 1.75 0 0 0 6.68 21h10.638a1.75 1.75 0 0 0 1.538-2.585L17.275 15.5Z"></path></svg></div></div></a> </span><span><a href="https://tutors-svelte.netlify.app/#/wall/archive/ewd-2022-wit.netlify.app" target=""><div data-tip="archives" class="tooltip tooltip-top capitalize"><div class="navbar-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="text-info iconify iconify--fluent" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M3 4.5A1.5 1.5 0 0 1 4.5 3h15A1.5 1.5 0 0 1 21 4.5V6a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 6V4.5ZM4 9h16v8.25A3.75 3.75 0 0 1 16.25 21h-8.5A3.75 3.75 0 0 1 4 17.25V9Zm6.25 2a.75.75 0 0 0 0 1.5h3.5a.75.75 0 0 0 0-1.5h-3.5Z"></path></svg></div></div></a> </span></div></span></div></div>  <div class="flex"><div class="labmenu-container"><ul class="labmenu"><li class="py-1 text-base "> <a href="https://tutors-svelte.netlify.app/#/lab/ewd-2022-wit.netlify.app/topic04/book-1/Lab-Movie_App-Part1">  Developing a Movies Fan App. </a> </li><li class="py-1 text-base font-bold bordered"> <a href="https://tutors-svelte.netlify.app/#/lab/ewd-2022-wit.netlify.app/topic04/book-1/Startup">  The App overview. </a> </li><li class="py-1 text-base "> <a href="https://tutors-svelte.netlify.app/#/lab/ewd-2022-wit.netlify.app/topic04/book-1/HomePage_Components">  Developing the Home Page components. </a> </li><li class="py-1 text-base "> <a href="https://tutors-svelte.netlify.app/#/lab/ewd-2022-wit.netlify.app/topic04/book-1/HomePage">  Assembling the Home page. </a> </li><li class="py-1 text-base "> <a href="https://tutors-svelte.netlify.app/#/lab/ewd-2022-wit.netlify.app/topic04/book-1/MovieDetails_Components">  The Movie Details Page components. </a> </li><li class="py-1 text-base "> <a href="https://tutors-svelte.netlify.app/#/lab/ewd-2022-wit.netlify.app/topic04/book-1/MovieDetailsPage">  Assembling the Movie Details page. </a> </li><li class="py-1 text-base "> <a href="https://tutors-svelte.netlify.app/#/lab/ewd-2022-wit.netlify.app/topic04/book-1/Exercise">  Exercise. </a> </li></ul></div> <div id="lab-panel" class="labpanel"><header class="labmenu-mobile"><nav class="flex flex-wrap justify-between"><a class="btn btn-sm capitalize" href="https://tutors-svelte.netlify.app/#/lab/ewd-2022-wit.netlify.app/topic04/book-1/Lab-Movie_App-Part1"> <span aria-hidden="true">←</span>&nbsp;  Developing a Movies Fan App. </a><a class="ml-auto btn btn-sm capitalize" style="margin-left: auto" href="https://tutors-svelte.netlify.app/#/lab/ewd-2022-wit.netlify.app/topic04/book-1/HomePage_Components">  Developing the Home Page components. &nbsp;<span aria-hidden="true">→</span></a></nav></header> <article class="labcontent" style=""><h2 id="theappoverview">The App overview.</h2>
+<p>The features of the React app will include:</p>
+<ul>
+<li>Display a list of current movie releases. For each one, show its poster image, title, release date and viewer rating.</li>
+<li>Display more detailed information on a movie from the above list by clicking its 'More Info ..' button. The details include plot, genres, runtime, revenue, etc.</li>
+<li>Show extracts from written reviews for a movie.</li>
+<li>Show the full review text for a review.</li>
+<li>Add movies to your favourites list.</li>
+<li>Write a review for one of your favourites.</li>
+</ul>
+<p>The views for the app will look as follows:</p>
+<blockquote>
+  <blockquote>
+    <p>Discover page - List the first 20 movies returned by the TMDB API:</p>
+  </blockquote>
+</blockquote>
+<p><img src="./Lab-Movie_App-Part1_files/home.png" alt=""></p>
+<blockquote>
+  <blockquote>
+    <p>The list of movies can be filtered by genre, title, or both:</p>
+  </blockquote>
+</blockquote>
+<p><img src="./Lab-Movie_App-Part1_files/filtering.png" alt=""></p>
+<blockquote>
+  <blockquote>
+    <p>The Movie Details page will look as follows:</p>
+  </blockquote>
+</blockquote>
+<p><img src="./Lab-Movie_App-Part1_files/details.png" alt=""></p>
+<blockquote>
+  <blockquote>
+    <p>The Details page can optionally show extracts from all reviews written for the movie:</p>
+  </blockquote>
+</blockquote>
+<p><img src="./Lab-Movie_App-Part1_files/extracts.png" alt=""></p>
+<blockquote>
+  <blockquote>
+    <p>The above review extracts are clickable to give the full review text (The Review page):</p>
+  </blockquote>
+</blockquote>
+<p><img src="./Lab-Movie_App-Part1_files/review.png" alt=""></p>
+<blockquote>
+  <blockquote>
+    <p>The Favorites page - Lists the user's favourite movies, as selected from the Home page list:</p>
+  </blockquote>
+</blockquote>
+<p><img src="./Lab-Movie_App-Part1_files/favorites.png" alt=""></p>
+<blockquote>
+  <blockquote>
+    <p>The User can write a review for any of their favourite movies:</p>
+  </blockquote>
+</blockquote>
+<p><img src="./Lab-Movie_App-Part1_files/form.png" alt=""></p>
+<p>The TMDB (The Movie Database) API has a rich data model. At its core is the Movie entity. A sample instance of this entity is listed below - study its structure.</p>
+<pre><code class="hljs">{
+  <span class="hljs-attr">"adult"</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-attr">"backdrop_path"</span>: <span class="hljs-string">"/5Iw7zQTHVRBOYpA0V6z0yypOPZh.jpg"</span>,
+  <span class="hljs-attr">"belongs_to_collection"</span>: {
+    <span class="hljs-attr">"id"</span>: <span class="hljs-number">10</span>,
+    <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Star Wars Collection"</span>,
+    <span class="hljs-attr">"poster_path"</span>: <span class="hljs-string">"/iTQHKziZy9pAAY4hHEDCGPaOvFC.jpg"</span>,
+    <span class="hljs-attr">"backdrop_path"</span>: <span class="hljs-string">"/d8duYyyC9J5T825Hg7grmaabfxQ.jpg"</span>
+  },
+  <span class="hljs-attr">"budget"</span>: <span class="hljs-number">200000000</span>,
+  <span class="hljs-attr">"genres"</span>: [
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">14</span>,
+      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Fantasy"</span>
+    },
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">12</span>,
+      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Adventure"</span>
+    },
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">878</span>,
+      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Science Fiction"</span>
+    },
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">28</span>,
+      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Action"</span>
+    }
+  ],
+  <span class="hljs-attr">"homepage"</span>: <span class="hljs-string">"https://www.starwars.com/films/star-wars-episode-viii-the-last-jedi"</span>,
+  <span class="hljs-attr">"id"</span>: <span class="hljs-number">181808</span>,
+  <span class="hljs-attr">"imdb_id"</span>: <span class="hljs-string">"tt2527336"</span>,
+  <span class="hljs-attr">"original_language"</span>: <span class="hljs-string">"en"</span>,
+  <span class="hljs-attr">"original_title"</span>: <span class="hljs-string">"Star Wars: The Last Jedi"</span>,
+  <span class="hljs-attr">"overview"</span>: <span class="hljs-string">"Rey develops her newly discovered abilities with the guidance of Luke Skywalker, who is unsettled by the strength of her powers. Meanwhile, the Resistance prepares to do battle with the First Order."</span>,
+  <span class="hljs-attr">"popularity"</span>: <span class="hljs-number">44.208</span>,
+  <span class="hljs-attr">"poster_path"</span>: <span class="hljs-string">"/kOVEVeg59E0wsnXmF9nrh6OmWII.jpg"</span>,
+  <span class="hljs-attr">"production_companies"</span>: [
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">1</span>,
+      <span class="hljs-attr">"logo_path"</span>: <span class="hljs-string">"/o86DbpburjxrqAzEDhXZcyE8pDb.png"</span>,
+      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Lucasfilm"</span>,
+      <span class="hljs-attr">"origin_country"</span>: <span class="hljs-string">"US"</span>
+    },
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">11092</span>,
+      <span class="hljs-attr">"logo_path"</span>: <span class="hljs-literal">null</span>,
+      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Ram Bergman Productions"</span>,
+      <span class="hljs-attr">"origin_country"</span>: <span class="hljs-string">"US"</span>
+    },
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+      <span class="hljs-attr">"logo_path"</span>: <span class="hljs-string">"/wdrCwmRnLFJhEoH8GSfymY85KHT.png"</span>,
+      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Walt Disney Pictures"</span>,
+      <span class="hljs-attr">"origin_country"</span>: <span class="hljs-string">"US"</span>
+    }
+  ],
+  <span class="hljs-attr">"production_countries"</span>: [
+    {
+      <span class="hljs-attr">"iso_3166_1"</span>: <span class="hljs-string">"US"</span>,
+      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"United States of America"</span>
+    }
+  ],
+  <span class="hljs-attr">"release_date"</span>: <span class="hljs-string">"2017-12-13"</span>,
+  <span class="hljs-attr">"revenue"</span>: <span class="hljs-number">1332459537</span>,
+  <span class="hljs-attr">"runtime"</span>: <span class="hljs-number">152</span>,
+  <span class="hljs-attr">"spoken_languages"</span>: [
+    {
+      <span class="hljs-attr">"iso_639_1"</span>: <span class="hljs-string">"en"</span>,
+      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"English"</span>
+    }
+  ],
+  <span class="hljs-attr">"status"</span>: <span class="hljs-string">"Released"</span>,
+  <span class="hljs-attr">"tagline"</span>: <span class="hljs-string">"Darkness rises... and light to meet it"</span>,
+  <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Star Wars: The Last Jedi"</span>,
+  <span class="hljs-attr">"video"</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-attr">"vote_average"</span>: <span class="hljs-number">7</span>,
+  <span class="hljs-attr">"vote_count"</span>: <span class="hljs-number">9692</span>
+}
+</code></pre>
+<h2 id="startup">Start-up.</h2>
+<p>Download <a href="https://ewd-2022-wit.netlify.app/topic04/book-1/archives/startcode.zip" rel="noopener noreferrer" target="_blank">this archive</a>, unzip it and import it into VS Code. Open an integrate terminal and run:</p>
+<pre><code class="hljs">$ npm <span class="hljs-keyword">install</span>
+</code></pre>
+<p>The archive contained a skeleton create-react-app project. The <code>src</code> folder has been divided into several subfolders to reflect the different code elements of a React app based on best practices.</p>
+<p>Our Movies Fan app will communicate with The TMDB API (Note: We will use version 3 of the API). An API Key authenticates all requests to the API. Please follow these steps to acquire a personal key for development:</p>
+<ul>
+<li>Signup for an account <a href="https://www.themoviedb.org/account/signup" rel="noopener noreferrer" target="_blank">here</a>.</li>
+<li>Log in to your account. To get a key, follow this sequence:</li>
+</ul>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>Settings &gt; API &gt; Create &gt; Click on Request an API &gt; Click "Developer" &gt; Fill in Details</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<p><img src="./Lab-Movie_App-Part1_files/apikey.png" alt=""></p>
+<p>In VS Code, in the project base folder, create a new file called <code>.env</code> with the following content:</p>
+<pre><code class="hljs"><span class="hljs-attr">REACT_APP_TMDB_KEY</span>=.... your API key value ...
+<span class="hljs-attr">FAST_REFRESH</span>=<span class="hljs-literal">false</span>
+</code></pre>
+<p>Later we will use this environment variable in HTTP calls to the API.</p>
+<p>It is imperative to keep your API key private. For example, never include it in a project pushed up to GitHub. Notice, in <code>.gitignore</code>, it is listed in <code>.env</code> to safeguard against this.</p>
+<hr>
+<h2 id="theappdevelopmentprocess">The App Development process.</h2>
+<p><em>Thinking in React</em> is a development process recommended by the React design team (discussed in the lectures). This lab is focused on the first step of this process, titled <code>Build a static version</code> of the app. In subsequent labs, we will add user interaction and routing.</p></article></div></div></div></body></html>
